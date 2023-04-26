@@ -1,0 +1,13 @@
+body{
+    background-color: lightyellow;
+    color:darkgreen;
+}
+h1{
+    text-align: center;
+    color:green;
+    background-color: yellow;
+    border:2px Solid Blue;
+}
+form{
+    color:orangered;
+}

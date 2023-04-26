@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Student-Form</title>
+        <link href="{% static 'css/studentform.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+    <!--<h1>Student Entry Form</h1>
+    <hr />-->
+    <div align="center">
+        {%if sentdata%}
+            <h1>Thanks for Providing Information..!!</h1>
+            <h2>Enter Next Student Marks</h2>
+        {%else%}
+            <h1>Student marks Submit Form</h1>
+        {%endif%}
+        <hr />
+        <form method="post">
+            {{form1.as_p}}
+            {%csrf_token%}
+            <input type="submit" name=""value="Submit">
+        </form>
+    </div>
+</body>
+</html>
